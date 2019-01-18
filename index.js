@@ -13,3 +13,28 @@ function produceDrivingRange(blockRange){
     }
  }
 }
+
+
+function produceTipCalculator(tip){
+   //  return the tip percentage of the fare
+   return function(fare){
+      return fare * tip
+   }
+}
+
+
+// createDriver is a function that returns a Driver class. 
+// The class has reference to a driverId that is 
+// incremented each time a new driver is created. 
+// The rest of the code base does not have access to driverId.
+
+function createDriver(){
+
+   let DriverId = 0;
+   return class {
+   constructor(name){
+      this.name = name;
+      this.id = ++DriverId;
+     }
+   }
+}
