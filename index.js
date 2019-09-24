@@ -3,7 +3,7 @@ function produceDrivingRange(blockRange){
  return function(startingBlock, endingBlock){
     n = startingBlock.split("th")[0]
     e = endingBlock.split("th")[0]
-   
+
      if (e - n <= blockRange){
         return `within range by ${(blockRange - (e - n))}`
        }else
@@ -23,9 +23,9 @@ function produceTipCalculator(tip){
 }
 
 
-// createDriver is a function that returns a Driver class. 
-// The class has reference to a driverId that is 
-// incremented each time a new driver is created. 
+// createDriver is a function that returns a Driver class.
+// The class has reference to a driverId that is
+// incremented each time a new driver is created.
 // The rest of the code base does not have access to driverId.
 
 function createDriver(){
