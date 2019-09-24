@@ -33,6 +33,7 @@ function createDriver(){
    let DriverId = 0;
    return class {
    constructor(name){
+     // we encapsulations right here. 
       this.name = name;
       this.id = ++DriverId;
      }
